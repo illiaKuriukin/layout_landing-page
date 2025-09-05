@@ -1,4 +1,69 @@
+html {
+  font-family: Poppins, sans-serif;
+  color: white;
+}
+
 body {
   margin: 0;
   padding: 0;
+  background-color: #1d1d1d;
+}
+
+.header {
+  background-image:url(/src/image/image-bg-header.png);
+  background-size: cover;
+  background-position: 88%;
+  padding: 24px 20px;
+  box-sizing: border-box;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 130px;
+  height: 38px;
+}
+
+.header__icons {
+  display: flex;
+}
+
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 24px;
+}
+
+.icon:last-child {
+  margin-right: 0;
+}
+
+.icon--phone {
+  background-image: url(../image/icon/icon-phone.png);
+}
+
+.icon--menu {
+  background-image: url(../image/icon/icon-burger-menu.png);
+}
+
+.header__title {
+  margin-bottom: 68px;
+  margin-top: 0;
+
+  font-style: Bold;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+  text-align: center;
+  vertical-align: middle;
 }
