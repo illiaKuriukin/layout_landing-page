@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -19,9 +19,9 @@
       defer
     ></script>
   </head>
-  <body>
+  <body class="page__body">
     <header class="header">
-      <div class="header__top">
+      <div class="top-bar top-bar__logo">
         <a href="#" class="logo">
           <img src="./image/icon/Menu_logo_white.png"
           alt="logo"
@@ -31,19 +31,65 @@
 
         <div class="header__icons">
           <a href="#" class="icon icon--phone"></a>
-          <a href="#" class="icon icon--menu"></a>
+          <a href="#menu" class="icon icon--menu"></a>
         </div>
       </div>
 
       <div class="header__bottom">
-
         <h1 class="header__title">Take the Streets</h1>
       </div>
     </header>
 
-    <aside></aside>
+    <aside class="page__menu" id="menu">
+      <div class="menu">
+        <div class="top-bar menu__top">
+          <a href="#" class="top-bar__logo">
+            <img src="./image/icon/Menu_logo_default.png"
+            alt="logo"
+            class="logo"
+            >
+          </a>
 
-    <main class="main"></main>
+          <a href="#" class="icon icon--close"></a>
+        </div>
+
+        <div class="menu__content">
+          <nav class="nav menu__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about-us" class="nav__link">About us</a>
+              </li>
+              <li class="nav__item">
+                <a href="#compare-bikes" class="nav__link">Compare bikes</a>
+              </li>
+              <li class="nav__item">
+                <a href="#details" class="nav__link">Details</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contacts" class="nav__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <a href="tel:+1 234 5555-55-55" class="menu__phone-number">
+            +1 234 5555-55-55
+          </a>
+
+          <a href="tel:+1 234 5555-55-55" class="menu__book-a-test-ride">
+            Book a test ride
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="compare-bikes">Compare bikes</section>
+      <section class="details">Details</section>
+      <section class="contact">Contact</section>
+    </main>
 
     <footer class="footer"></footer>
 
