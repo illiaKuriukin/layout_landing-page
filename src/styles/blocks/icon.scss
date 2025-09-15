@@ -1,0 +1,31 @@
+.header__icons {
+  display: flex;
+}
+
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 24px;
+}
+
+.icon:last-child {
+  margin-right: 0;
+}
+
+.icon--phone {
+  background-image: url(../image/icon/icon-phone.png);
+}
+
+.icon--menu {
+  background-image: url(../image/icon/icon-burger-menu.png);
+}
+
+.icon--close {
+  background-image: url(../image/icon/icon-close.png);
+}
+
+.logo {
+  width: 130px;
+  height: 38px;
+}
