@@ -1,10 +1,11 @@
 .top-bar {
-  padding: 24px 20px;
+  @include content-pading-inline;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.top-bar__logo {
-  display: flex;
+  &__logo {
+    display: flex;
+  }
 }

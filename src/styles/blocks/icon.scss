@@ -4,28 +4,29 @@
 
 .icon {
   display: block;
-  width: 24px;
-  height: 24px;
+
+  @include icon-size;
+
   margin-right: 24px;
-}
+  background-size: cover;
 
-.icon:last-child {
-  margin-right: 0;
-}
+  &:last-child {
+    margin-right: 0;
+  }
 
-.icon--phone {
-  background-image: url(../image/icon/icon-phone.png);
-}
+  &--phone {
+    background-image: url(../image/icon/icon-phone.png);
+  }
 
-.icon--menu {
-  background-image: url(../image/icon/icon-burger-menu.png);
-}
+  &--menu {
+    background-image: url(../image/icon/icon-burger-menu.png);
+  }
 
-.icon--close {
-  background-image: url(../image/icon/icon-close.png);
+  &--close {
+    background-image: url(../image/icon/icon-close.png);
+  }
 }
 
 .logo {
-  width: 130px;
-  height: 38px;
+  @include logo-size;
 }

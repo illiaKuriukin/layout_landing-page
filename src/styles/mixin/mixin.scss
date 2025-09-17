@@ -1,0 +1,35 @@
+@mixin on-tablet {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin content-pading-inline {
+  padding: 24px 20px;
+
+  @include on-tablet {
+    padding: 36px 72px;
+  }
+}
+
+@mixin icon-size {
+  width: 24px;
+  height: 24px;
+  margin-right: 24px;
+
+  @include on-tablet {
+    width: 32px;
+    height: 32px;
+    margin-right: 32px;
+  }
+}
+
+@mixin logo-size {
+  width: 130px;
+  height: 38px;
+
+  @include onTabon-tabletlet {
+    width: 187px;
+    height: 56px;
+  }
+}
